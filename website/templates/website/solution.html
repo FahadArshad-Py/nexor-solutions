@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions</title>
+    <link rel="stylesheet" href="{% static 'website/css/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <nav class="navbar">
+    <div class="logo">
+        <a href="{% url 'home' %}">
+            <img src="{% static 'website/images/22.png' %}" alt="LOGO">
+        </a>
+    </div>
+
+    <ul class="navlinks">
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'solution' %}">Solutions</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+</nav>
+    <section class="services">
+        <h2>Business Solutions That Drive Growth</h2>
+        <p>Helping businesses streamline operations,
+            improve efficiency, and accelerate digital transformation.</p>
+        <div class="slider-container">
+            <button class="slide-btn left" onclick="slideLeft()">&#10094;</button>
+            <div class="services-slider" id="servicesSlider">
+                <div class="service-card">
+                    <h3>Business Process Management</h3>
+                    <p>Optimize and centralize your business operations through custom software designed around your
+                        workflows.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Customer Relationship Management</h3>
+                    <p>Manage customer interactions, leads, sales pipelines, and communication from a single platform.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h3>Inventory & Stock Control</h3>
+                    <p>Monitor inventory levels, products, suppliers, and orders in real time while reducing manual
+                        errors.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Workflow Automation</h3>
+                    <p>Automate repetitive business processes and free your team to focus on higher-value tasks.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Data Analytics & Reporting</h3>
+                    <p>Transform business data into meaningful insights with dashboards, reports, and performance
+                        tracking.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Digital Transformation</h3>
+                    <p>Modernize traditional business processes using scalable digital solutions and automation
+                        technologies.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Internal Management Systems</h3>
+                    <p>Build centralized platforms for employee management, attendance, documentation, and operational
+                        control.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Web Presence & Customer Engagement</h3>
+                    <p>Strengthen your online presence with modern websites and digital solutions that attract and
+                        retain customers.</p>
+                </div>
+                <button class="slide-btn right" onclick="slideRight()">&#10095;</button>
+            </div>
+        </div>
+        <h3>Ready to Transform Your Business?</h3>
+        <p>Let's discuss your goals and create a solution
+            tailored to your organization's needs.</p>
+        <a href="{% url 'contact' %}">Get Started<span>&#8594;</span></a>
+    </section>
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3>Nexor Solutions</h3>
+                <p>
+                    Building custom web applications and
+                    business software solutions.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'solution' %}">Solutions</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li>Web Applications</li>
+                    <li>Business Automation</li>
+                    <li>API Integration</li>
+                    <li>Database Systems</li>
+                    <li><a href="{% url 'services' %}">Explore More</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>info@nexorsolutions.com</p>
+                <p>Lahore, Pakistan</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Nexor Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="{% static 'website/js/script.js' %}?v=10"></script>
+</body>
+
+</html>

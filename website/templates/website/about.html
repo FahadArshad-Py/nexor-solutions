@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Nexor</title>
+    <link rel="stylesheet" href="{% static 'website/css/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <nav class="navbar">
+    <div class="logo">
+        <a href="{% url 'home' %}">
+            <img src="{% static 'website/images/22.png' %}" alt="LOGO">
+        </a>
+    </div>
+
+    <ul class="navlinks">
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'solution' %}">Solutions</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+</nav>
+    <section class="hero">
+        <div class="hero-left">
+            <h1>About Us</h1>
+            <p>At Nexor Solutions, we help businesses transform ideas into powerful digital solutions. We specialize in
+                designing and developing custom web applications, business management systems, and software tailored to
+                the unique needs of each client. <br>
+                <br>
+                Our mission is to simplify business processes through technology, delivering secure, scalable, and
+                user-friendly solutions that drive growth and efficiency. Whether it's a custom management system,
+                workflow automation, or a modern web platform, we focus on building software that solves real business
+                challenges. <br>
+                <br>
+                We believe that great software is more than just code - it is a tool that empowers businesses to
+                innovate, compete, and succeed in a rapidly evolving digital world. <br>
+                <br>
+                Nexor Solutions is committed to delivering high-quality development, clear communication, and long-term
+                value for every client we work with.</p>
+        </div>
+        <div class="hero-right">
+            
+        </div>
+
+    </section>
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3>Nexor Solutions</h3>
+                <p>
+                    Building custom web applications and
+                    business software solutions.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'solution' %}">Solutions</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li>Web Applications</li>
+                    <li>Business Automation</li>
+                    <li>API Integration</li>
+                    <li>Database Systems</li>
+                    <li><a href="{% url 'services' %}">Explore More</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>info@nexorsolutions.com</p>
+                <p>Lahore, Pakistan</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Nexor Solutions. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="{% static 'website/js/script.js' %}?v=10"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Nexor</title>
+    <link rel="stylesheet" href="{% static 'website/css/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <nav class="navbar">
+    <div class="logo">
+        <a href="{% url 'home' %}">
+            <img src="{% static 'website/images/22.png' %}" alt="LOGO">
+        </a>
+    </div>
+
+    <ul class="navlinks">
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'solution' %}">Solutions</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+</nav>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Have a project in mind? Let's build something great together.</p>
+        <form class="contact-form" method="POST">
+
+            {% csrf_token %}
+
+            <input type="text" name="full_name" placeholder="Full name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <select name="service" required>
+                <option value="">Select Service</option>
+                <option>Custom Web Application</option>
+                <option>Business Automation</option>
+                <option>Portfolio Website</option>
+                <option>Database development</option>
+                <option>Other</option>
+            </select>
+            <textarea name="message" placeholder="Tell us about your Project" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3>Nexor Solutions</h3>
+                <p>
+                    Building custom web applications and
+                    business software solutions.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'solution' %}">Solutions</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li>Web Applications</li>
+                    <li>Business Automation</li>
+                    <li>API Integration</li>
+                    <li>Database Systems</li>
+                    <li><a href="{% url 'services' %}">Explore More</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>info@nexorsolutions.com</p>
+                <p>Lahore, Pakistan</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Nexor Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="{% static 'website/js/script.js' %}?v=10"></script>
+</body>
+
+</html>

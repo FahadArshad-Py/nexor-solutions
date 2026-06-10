@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services at Nexor</title>
+    <link rel="stylesheet" href="{% static 'website/css/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <nav class="navbar">
+    <div class="logo">
+        <a href="{% url 'home' %}">
+            <img src="{% static 'website/images/22.png' %}" alt="LOGO">
+        </a>
+    </div>
+
+    <ul class="navlinks">
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'solution' %}">Solutions</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+</nav>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <p>We provide modern software solutions for growing business</p>
+
+        <div class="slider-container">
+            <button class="slide-btn left" onclick="slideLeft()">&#10094;</button>
+
+            <div class="services-slider" id="servicesSlider">
+                <div class="service-card">
+                    <img src="{% static 'website\images\web.jpg' %}" alt="">
+                    <h3>Custom Web Application</h3>
+                    <p>Scalable web apps tailored to your business needs.</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="{% static 'website\images\business.jpg' %}" alt="">
+                    <h3>Business management Systems</h3>
+                    <p>Manage operations, staff, customers, and workflows.</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="{% static 'website\images\CRM.jpg' %}" alt="">
+                    <h3>CRM Systems</h3>
+                    <p>Trac leads, clients, sales, and customer communication.</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="{% static 'website\images\inventory.jpg' %}" alt="">
+                    <h3>Inventory Systems</h3>
+                    <p>Monitor products, stock levels, orders, and reports.</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="{% static 'website\images\portfolio.jpg' %}" alt="">
+                    <h3>Portfolio Websites</h3>
+                    <p>Mordern responsive websites for business and professionals.</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="{% static 'website\images\API.jpg' %}" alt="">
+                    <h3>API Integration</h3>
+                    <p>Connect your softwares with third party tools and services.</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="{% static 'website\images\automation.jpg' %}" alt="">
+                    <h3>Automation Solutions</h3>
+                    <p>Automate repetitive tasks and improve business efficiency.</p>
+                </div>
+
+                <button class="slide-btn right" onclick="slideRight()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3>Nexor Solutions</h3>
+                <p>
+                    Building custom web applications and
+                    business software solutions.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'solution' %}">Solutions</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li>Web Applications</li>
+                    <li>Business Automation</li>
+                    <li>API Integration</li>
+                    <li>Database Systems</li>
+                    <li><a href="{% url 'services' %}">Explore More</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>info@nexorsolutions.com</p>
+                <p>Lahore, Pakistan</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Nexor Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="{% static 'website/js/script.js' %}?v=10"></script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Nexor Solutions</title>
+    <link rel="stylesheet" href="{% static 'website/css/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <nav class="navbar">
+    <div class="logo">
+        <a href="{% url 'home' %}">
+            <img src="{% static 'website/images/22.png' %}" alt="LOGO">
+        </a>
+    </div>
+
+    <ul class="navlinks">
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'solution' %}">Solutions</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+</nav>
+    <section class="services">
+        <h2>Why Nexor Solutions</h2>
+        <p>At Nexor Solutions, we believe that great software is built through innovation, reliability, and a deep
+            understanding of business needs. <br> We focus on creating custom digital solutions that help businesses
+            streamline operations, improve efficiency, and achieve sustainable growth.</p>
+
+        <div class="slider-container">
+            <button class="slide-btn left" onclick="slideLeft()">&#10094;</button>
+
+            <div class="services-slider" id="servicesSlider">
+                <div class="service-card">
+                    <h3>Custom-Built Solutions</h3>
+                    <p>Every business is unique. We develop software tailored specifically to your requirements instead
+                        of relying on one-size-fits-all solutions.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Modern Technologies</h3>
+                    <p>We utilize modern development practices and technologies to create secure, scalable, and
+                        future-ready applications.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Scalable Architecture</h3>
+                    <p>Our solutions are designed with growth in mind, ensuring that your software can evolve alongside
+                        your business.</p>
+                </div>
+                <div class="service-card">
+                    <h3>User-Centric Design</h3>
+                    <p>We prioritize intuitive and user-friendly interfaces that make software easy to learn, use, and
+                        manage.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Transparent Communication</h3>
+                    <p>We maintain clear communication throughout the entire development process, keeping you informed
+                        at every stage.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Reliable Support</h3>
+                    <p>Our commitment doesn't end after deployment. We provide ongoing support and assistance to ensure
+                        your systems continue to perform effectively.</p>
+                </div>
+                <button class="slide-btn right" onclick="slideRight()">&#10095;</button>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3>Nexor Solutions</h3>
+                <p>
+                    Building custom web applications and
+                    business software solutions.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'solution' %}">Solutions</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li>Web Applications</li>
+                    <li>Business Automation</li>
+                    <li>API Integration</li>
+                    <li>Database Systems</li>
+                    <li><a href="{% url 'services' %}">Explore More</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>info@nexorsolutions.com</p>
+                <p>Lahore, Pakistan</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Nexor Solutions. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="{% static 'website/js/script.js' %}?v=10"></script>
+</body>
+
+</html>

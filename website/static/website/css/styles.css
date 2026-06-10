@@ -1,0 +1,422 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(135deg, #7c5cff, #004aad);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+#particles-js{
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+}
+#particles-js canvas{
+    display: block;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    width: 100%;
+}
+.logo img{
+    width: 180px;
+    height: auto;
+    
+}
+.navlinks{
+    list-style-type:none;
+    display: flex;
+    gap: 25px;
+}
+.navlinks a{
+    display: block;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration:none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+.navlinks a:hover{
+    background-color: #5917ff;
+    transform: translateY(-2px);
+    text-decoration: underline;
+}
+.hero{
+    min-height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.hero-left{
+    background: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+.hero-left h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    margin-bottom: 50px;
+}
+.hero-left p{
+    margin: 50px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    color: white;
+}
+.hero-right {
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+.hero-right h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+.hero-right p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.hero-right a{
+    padding: 20px;
+    text-decoration: underline;
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+    transition: color 0.3s ease;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+.hero-right a:hover{
+    background-color: #5917ff;
+    transform: translateY(-2px);
+}
+.footer{
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 60px 80px 20px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-section{
+    font-family: 'Montserrat', sans-serif;
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-section h3{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer-section ul{
+    list-style: none;
+}
+
+.footer-section ul li{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+.footer-section a{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover{
+    color: #d6c6ff;
+}
+
+.footer-bottom{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
+}
+
+/* Contact Form */
+
+.contact{
+    padding: 80px 80px;
+    color: white;
+    text-align: center;
+}
+.contact h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+.contact p{
+    margin-bottom: 40px;
+    color: rgba(255,255,255,0.8);
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+}
+.contact-form textarea{
+    height: 150px;
+    resize: none;
+}
+.contact-form button{
+    padding: 16px;
+    border: none;
+    border-radius: 50px;
+    background: #5917ff;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.contact-form button:hover{
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Services page */
+
+.services{
+    /*min-height: 100vh;*/
+    padding: 80px 80px;
+    color: white;
+    text-align: center;
+}
+.services h2{
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.services h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+}
+.services p{
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+.services a{
+    padding: 20px;
+    text-decoration: underline;
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+    transition: color 0.3s ease;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+.services a:hover{
+    background-color: #5917ff;
+    transform: translateY(-2px);
+}
+
+.slider-container{
+    position: relative;
+    max-width: 1050px;
+    margin: auto;
+    overflow: hidden;
+}
+.services-slider{
+    display: flex;
+    gap: 30px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+.service-card{
+    flex: 0 0 320px;
+    min-width: 320px;
+    height: 400px;
+    padding: 35px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.18);
+    text-align: left;
+    transition: 0.3s ease;
+}
+.service-card:hover{
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.14);
+}
+.service-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+.service-card h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.service-card p{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.slide-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.15);
+    color: white;
+    border: none;
+    font-size: 32px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+.slide-btn:hover{
+    background: rgba(255,255,255,0.3);
+}
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+@media (max-width: 768px) {
+
+       .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        width: 110px;
+        height: auto;
+    }
+
+    .navlinks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 0;
+    }
+
+    .navlinks li {
+        list-style: none;
+    }
+
+    .navlinks a {
+        font-size: 14px;
+        padding: 8px 10px;
+        display: inline-block;
+    }
+
+    .hero,
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0px;
+        gap: 30px;
+    }
+
+    .hero-left,
+    .hero-right,
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .hero-left img,
+    .about-image img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .hero-right h1,
+    .about-content h2,
+    .services h2 {
+        font-size: 34px;
+    }
+    .hero-left p{
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+    .hero-left h1{
+        font-size: 34px;
+    }
+    .hero-right p,
+    .about-content p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .services {
+        padding: 40px 20px;
+    }
+
+    .service-card,
+    .solution-card {
+        flex: 0 0 280px;
+    }
+    .contact{
+        padding: 40px 20px;
+    }
+
+    .footer {
+        padding: 40px 20px 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
