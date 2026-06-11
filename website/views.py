@@ -43,3 +43,14 @@ def contact(request):
 
 def nexor(request):
     return render(request, "website/nexor.html")
+
+def create_admin(request):
+    if not User.objects.filter(username="admin").exists():
+        User.objects.create_superuser(
+            username="admin",
+            email="admin@nexorsolutions.com",
+            password="admin"
+        )
+        return HttpResponse("Admin created successfully.")
+
+    return HttpResponse("Admin already exists.")
