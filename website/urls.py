@@ -8,5 +8,4 @@ urlpatterns = [
     path('solution/', views.solution, name='solution'),
     path('contact/', views.contact, name='contact'),
     path('nexor/', views.nexor, name='nexor'),
-    path("create-admin/", views.create_admin),
 ]
