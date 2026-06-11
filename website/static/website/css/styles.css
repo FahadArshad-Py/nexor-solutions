@@ -3,6 +3,8 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+
 body{
     background: linear-gradient(135deg, #7c5cff, #004aad);
     background-size: cover;
@@ -14,10 +16,20 @@ body{
 #particles-js{
     position: fixed;
     inset: 0;
-    z-index: 1;
+    z-index: -1;
+    pointer-events: none;
 }
 #particles-js canvas{
     display: block;
+    pointer-events: none;
+}
+.navbar,
+.hero,
+.services,
+.contact,
+.footer{
+    position: relative;
+    z-index: 999;
 }
 .navbar{
     display: flex;

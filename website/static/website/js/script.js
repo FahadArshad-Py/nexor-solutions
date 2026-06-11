@@ -48,7 +48,7 @@ tsParticles.load("particles-js", {
             attract: {
                 distance: 150,
                 duration: 0.6,
-                speed: 1.5
+                speed: 1
             }
         }
     },

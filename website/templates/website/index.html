@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexor Solutions</title>
-    <link rel="stylesheet" href="{% static 'website/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/styles.css' %}?v=100">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div id="particles-js"></div>
+   <div id="particles-js"></div>
 
     <nav class="navbar">
     <div class="logo">
@@ -35,7 +35,7 @@
         <div class="hero-left">
             
         </div>
-        <divc class="hero-right">
+        <div class="hero-right">
             <h1>
                 Transforming Ideas Into <br>
                 Powerful Digital Solutions
@@ -44,7 +44,7 @@
                 We design and develop scalable web applications,
                 business systems, and automation solutions.
             </p>
-            <a href="nexor/">Why Nexor Solutions <span>&#8594;</span></a>
+            <a href="{% url 'nexor' %}">Why Nexor Solutions <span>&#8594;</span></a>
             </div>
     </section>
     <footer class="footer">
